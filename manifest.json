@@ -1,0 +1,29 @@
+{
+  "name": "Facebook Ads Blocker",
+  "version": "1.0.0",
+  "description": "Facebook Sponsored Ads Blocker",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "css": [],
+      "js": [
+        "js/content.js"
+      ],
+      "matches": [
+        "*://*.facebook.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "manifest_version": 2
+}
